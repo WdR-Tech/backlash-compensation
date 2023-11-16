@@ -1,15 +1,31 @@
 # Backlash Compensation for Marlin 3D Printers
 
-This project addresses the lack of built-in backlash compensation in older Marlin 3D printers by providing a Python script that can be integrated into the G-code workflow. Backlash compensation is crucial for minimizing inaccuracies caused by mechanical play in the printer's movement.
+This project aims to address the lack of built-in backlash compensation in older Marlin 3D printers by providing two different methods for incorporating backlash compensation into the printing process.
 
 ## Overview
 
 - **Compatibility:** Primarily developed for older Marlin 3D printers lacking native support for backlash compensation.
-- **Current Status:** This project is in the development phase, and users are advised to be cautious as it may contain bugs. Use it at your own risk.
+- **Current Status:** This project is in the development phase, and users are advised to exercise caution as it may contain bugs. Use it at your own risk.
 
-## Getting Started
+## Method 1: Cura Post-Processing Script
+To use backlash compensation as a Cura post-processing script, follow these steps:
 
-To implement backlash compensation using this script, follow these steps:
+1. **Download the Script:**
+   - Download the `BacklashCompensationCura.py` script from this repository.
+
+2. **Copy the Script:**
+   - Open File Explorer and navigate to `C:\Users\<user>\AppData\Roaming\cura\<version_number>\scripts\`.
+   - Copy the downloaded `BacklashCompensationCura.py` script to this folder.
+
+3. **How to Use:**
+   - Restart Cura and go to `Extensions` > `Post Processing` > `Modify G-Code`.
+   - Click on `Add a script` and select `Script` > `Backlash Compensation`.
+   - Adjust the `Xbacklash` and `Ybacklash` variables in the script to your backlash values in mm.
+   - Click on "close".
+   - Slice your model as usual, and the backlash compensation will be applied during post-processing.
+
+## Method 2: Python Script
+To implement backlash compensation using the Python script, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
