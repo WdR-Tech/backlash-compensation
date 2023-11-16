@@ -1,6 +1,6 @@
 # Backlash Compensation for Marlin 3D Printers
 
-This project aims to address the lack of built-in backlash compensation in older Marlin 3D printers by providing two different methods for incorporating backlash compensation into the printing process.
+This project aims to address the lack of built-in backlash compensation in 3d printers that use marlin firmware older then marlin 2.0. by providing two different methods for incorporating backlash compensation into the printing process.
 
 ## Overview
 
