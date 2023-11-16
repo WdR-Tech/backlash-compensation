@@ -20,7 +20,7 @@ To use backlash compensation as a Cura post-processing script, follow these step
 3. **How to Use:**
    - Restart Cura and go to `Extensions` > `Post Processing` > `Modify G-Code`.
    - Click on `Add a script` and select `Script` > `Backlash Compensation`.
-   - Adjust the `Xbacklash` and `Ybacklash` variables in the script to your backlash values in mm.
+   - Adjust the `X Backlash` and `Y Backlash` variables in the script to your backlash values in mm.
    - Click on "close".
    - Slice your model as usual, and the backlash compensation will be applied during post-processing.
 
