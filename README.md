@@ -19,6 +19,7 @@ To implement backlash compensation using this script, follow these steps:
 
 2. **Usage:**
    - Adjust the `input_file_path` and `output_file_path` variables in the script according to your G-code files.
+   - Adjust the `Xbacklash` and `Ybacklash` variables to your backlash values in mm.
    - Run the script:
      ```bash
      python backlash_compensation.py
