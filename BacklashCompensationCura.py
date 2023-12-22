@@ -1,7 +1,7 @@
 from ..Script import Script
 import re
 
-class BacklashCompensation(Script):
+class BacklashCompensationCura(Script):
     def __init__(self):
         super().__init__()
 
